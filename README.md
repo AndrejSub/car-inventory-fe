@@ -1,35 +1,44 @@
-# car-inventory-fe
+# Car Inventory Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+This is the frontend for the Car Inventory system, built with Vue.js.
 
-## Recommended IDE Setup
+## 🚀 Getting Started
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (16+ recommended)
+- npm or yarn
+- (Optional) Herd for backend development
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
+### Installation
+Clone the repository and install dependencies:
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Running the Development Server
 
+#### If Using Herd for Backend
+If you are using **Herd** for the backend, you can simply run:
+```sh
+npm run dev
+```
+The frontend will automatically connect to `http://car-inventory-be.test`.
+
+#### If Not Using Herd
+If you are **not** using Herd, you must update the API base URL:
+1. Open `src/services/apiService.js`
+2. Change `API_BASE_URL` to match your backend URL, for example:
+```js
+const API_BASE_URL = "http://127.0.0.1:8000";
+```
+3. Then start the development server:
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Troubleshooting
+- **If API requests fail**: Ensure the backend is running and CORS is properly configured.
+- **If using `php artisan serve`**, make sure you are using `http://127.0.0.1:8000` in `API_BASE_URL`.
 
-```sh
-npm run build
-```
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
