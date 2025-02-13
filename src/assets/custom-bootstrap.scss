@@ -1,0 +1,27 @@
+$pagination-color: #ffffff;
+$pagination-bg: #343a40;
+$pagination-border-color: #495057;
+
+
+$pagination-focus-color: #ffffff;
+$pagination-focus-bg: #c20c1b;
+$pagination-focus-box-shadow: 0 0 5px rgba(180, 5, 5, 0.6);
+$pagination-focus-outline: 0;
+
+
+$pagination-hover-color: #ffffff;
+$pagination-hover-bg: #850c0c;
+$pagination-hover-border-color: #a21717;
+
+$pagination-active-color: #ffffff;
+$pagination-active-bg: #832232;
+$pagination-active-border-color: #5B1212;
+
+
+$pagination-disabled-color: #6c757d;
+$pagination-disabled-bg: #343a40;
+$pagination-disabled-border-color: #495057;
+
+
+$sass-verbose: false;
+@import "bootstrap/scss/bootstrap";

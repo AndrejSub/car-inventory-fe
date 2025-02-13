@@ -1,0 +1,9 @@
+#app {
+    min-height: 100vh; /* Zabezpečí, že div #app vždy zaberie minimálne 100% výšky okna */
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1; /* Zabezpečí, že hlavný obsah vyplní zvyšok stránky */
+}
